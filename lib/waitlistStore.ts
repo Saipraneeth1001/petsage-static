@@ -35,10 +35,7 @@ export async function exportWaitlistCsv(): Promise<string> {
     return "email,createdAt\n";
   }
 
-  const timestamps = (await kv.hmget<(string | null)[]>(
-    EMAIL_TS_HASH_KEY,
-    ...emails
-  )) as (string | null)[];
+  const timestamps = await kv.hmget<Record<string, string>>(EMAIL_TS_HASH_KEY, ...emails);
 
   const rows = ["email,createdAt"];
   for (let i = 0; i < emails.length; i++) {
@@ -55,4 +52,3 @@ function csvEscape(value: string) {
   }
   return value;
 }
-

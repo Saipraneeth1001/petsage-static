@@ -42,11 +42,10 @@ export const siteContent = {
       { href: "/privacy", label: "Privacy Policy" },
       { href: "/terms", label: "Terms" }
     ],
-    socialLinks: [
-      // { href: "#", label: "X (placeholder)" },
-      // { href: "#", label: "LinkedIn (placeholder)" },
-      // { href: "#", label: "Instagram (placeholder)" }
-    ],
+    // Keep this empty for now. Add items later to enable the Social section in the footer.
+    // Example:
+    // { href: "https://x.com/yourhandle", label: "X" }
+    socialLinks: [] as { href: string; label: string }[],
     finePrint:
       "PetSage provides informational guidance and is not a substitute for professional veterinary advice."
   },
