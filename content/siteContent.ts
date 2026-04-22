@@ -68,38 +68,84 @@ export const siteContent = {
     home: {
       seoTitle: "Home",
       seoDescription:
-        "PetSage is an AI-powered pet wellness companion designed to help pet parents better understand symptoms, organize context, and decide when to seek veterinary care.",
+        "PetSage helps pet parents track health history, scan prescriptions, set reminders, and share vet-ready timelines.",
       hero: {
-        title: "Calm, clear guidance for pet health questions",
+        title: "Your pet’s health history, reminders, and guidance — in one place.",
         subtitle:
-          "PetSage helps you describe symptoms, track context, and understand when it’s time to seek veterinary care — with a premium, safety-first experience.",
+          "PetSage helps you track symptoms, scan prescriptions, and share a clean vet-ready timeline.",
         trustLine:
           "Designed to support better decisions. Not a replacement for a veterinarian."
       },
-      valuePropsTitle: "Why PetSage",
-      valuePropsSubtitle: "A medical-tech feel with pet-first practicality.",
-      valueProps: [
+      problemTitle: "The problem",
+      problemStatement:
+        "Pet parents juggle chats, photos, prescriptions, and memory. Important details get lost.",
+      solutionTitle: "The solution",
+      solutionStatement:
+        "PetSage turns scattered info into a structured health timeline and actionable reminders.",
+      featureHighlightsTitle: "Feature highlights",
+      featureHighlights: [
         {
-          kicker: "Clarity",
-          title: "Organize symptoms and context",
+          title: "AI Guidance for Everyday Worries",
           description:
-            "Capture the details that matter — timeline, behavior, appetite, and photos — so nothing gets missed."
+            "Get safety-first guidance for day-to-day concerns, with clear prompts for emergency escalation when needed."
         },
         {
-          kicker: "Safety",
-          title: "Red-flag awareness",
+          title: "Prescription Scan to Structured Records",
           description:
-            "Spot signals that may warrant urgent care, and understand what information to share with a vet."
+            "Scan prescriptions with OCR and convert them into usable medication and care records."
         },
         {
-          kicker: "Continuity",
-          title: "Simple wellness tracking",
+          title: "Medication & Routine Reminders",
           description:
-            "Keep pet profiles and health notes in one place for better follow-ups over time."
+            "Schedule medications and care routines with alerts so fewer doses and follow-ups are missed."
+        },
+        {
+          title: "Vet-Ready Share Link / QR",
+          description:
+            "Share your pet’s organized history through a secure link or QR for faster, more informed consultations."
+        },
+        {
+          title: "Living Health Summary",
+          description:
+            "Auto-generate a running summary from symptoms, visits, records, and behavior changes."
         }
       ],
-      howItWorksPreviewTitle: "How it works",
-      howItWorksPreviewSubtitle: "Three steps to better context and confidence."
+      howToUseTitle: "How to use PetSage",
+      howToUseSteps: [
+        {
+          stepLabel: "Step 1",
+          title: "Create your pet profile",
+          description:
+            "Add core context like age, breed, allergies, conditions, and important notes."
+        },
+        {
+          stepLabel: "Step 2",
+          title: "Capture care events as they happen",
+          description:
+            "Log symptoms, behavior changes, vet visits, medications, and scan prescriptions."
+        },
+        {
+          stepLabel: "Step 3",
+          title: "Set reminders and get guided support",
+          description:
+            "Use AI guidance for concerns, schedule reminders, and escalate quickly when red flags appear."
+        },
+        {
+          stepLabel: "Step 4",
+          title: "Share with your vet",
+          description:
+            "Send a clean timeline and health summary before or during appointments via secure link or QR."
+        }
+      ],
+      whyItMattersTitle: "Why it matters",
+      whyItMatters: [
+        "Catch patterns early",
+        "Reduce missed medication",
+        "Walk into vet visits fully prepared"
+      ],
+      trustSafetyTitle: "Trust and safety",
+      trustSafetyNote:
+        "PetSage supports decisions but does not replace veterinary diagnosis."
     },
     mission: {
       seoTitle: "Mission",

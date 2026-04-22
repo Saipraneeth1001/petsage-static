@@ -18,6 +18,12 @@ export function Hero() {
             </h1>
             <p className="mt-5 text-base text-ink-700">{hero.subtitle}</p>
             <p className="mt-4 text-sm text-ink-500">{hero.trustLine}</p>
+            <a
+              href="#waitlist"
+              className="mt-6 inline-flex rounded-xl bg-ink-900 px-4 py-2 text-sm font-semibold text-white hover:bg-ink-950 transition"
+            >
+              {siteContent.waitlist.buttonLabel}
+            </a>
           </div>
 
           <div id="waitlist" className="rounded-3xl border border-black/5 bg-white p-6 shadow-soft">
