@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { PageShell } from "@/components/PageShell";
 import { siteContent } from "@/content/siteContent";
 
@@ -13,8 +14,8 @@ export default function QuickStartPage() {
     <PageShell title={quickStart.title} subtitle={quickStart.subtitle}>
       <div className="space-y-6">
         {quickStart.sections.map((section) => {
-          const sectionTitle = section.title ?? section.heading;
-          const steps = section.steps ?? section.items;
+          const sectionTitle = section.title;
+          const steps = section.steps;
           const images = section.images ?? [];
           return (
             <section key={sectionTitle} className="rounded-2xl border border-black/5 bg-white p-5 shadow-soft">
@@ -28,7 +29,14 @@ export default function QuickStartPage() {
                 <div className="mt-5 grid gap-4 sm:grid-cols-2">
                   {images.map((image) => (
                     <figure key={image.src} className="overflow-hidden rounded-2xl border border-black/10 bg-surface-50">
-                      <img src={image.src} alt={image.alt} className="h-auto w-full object-cover" loading="lazy" />
+                      <Image
+                        src={image.src}
+                        alt={image.alt}
+                        width={900}
+                        height={1600}
+                        className="h-auto w-full object-cover"
+                        loading="lazy"
+                      />
                       {image.caption ? (
                         <figcaption className="px-3 py-2 text-xs text-ink-700">{image.caption}</figcaption>
                       ) : null}
