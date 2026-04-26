@@ -182,29 +182,94 @@ export const siteContent = {
     },
     howItWorks: {
       seoTitle: "How it Works",
-      seoDescription: "A simple 3-step flow for pet wellness guidance.",
-      title: "How PetSage works",
-      subtitle: "A straightforward workflow that respects real life.",
+      seoDescription:
+        "Understand exactly how PetSage helps you log health history, get guidance, and prepare for better vet visits.",
+      title: "How PetSage Works",
+      subtitle:
+        "PetSage is a pet health companion that turns scattered details into clear, actionable care context.",
+      intro:
+        "Most pet parents manage care across memory, chats, prescriptions, and random notes. PetSage brings that into one structured system so you can act faster and share cleaner context with your vet.",
+      builtForTitle: "Built for real pet-parent moments",
+      builtFor: [
+        "When symptoms appear and you are unsure what changed",
+        "When you need medication and routine reminders that you will not miss",
+        "When you want a clear timeline before a vet consultation"
+      ],
+      capabilitiesTitle: "What PetSage gives you",
+      capabilities: [
+        {
+          title: "Structured Pet Profiles",
+          description:
+            "Store core context like age, breed, allergies, existing conditions, and notes."
+        },
+        {
+          title: "Timeline-Centered Care History",
+          description:
+            "Capture symptoms, behavior changes, vet visits, medications, and consult notes in one running record."
+        },
+        {
+          title: "OCR Prescription Capture",
+          description:
+            "Upload prescriptions, extract text with OCR, and parse details into structured fields."
+        },
+        {
+          title: "Reminders and Schedules",
+          description:
+            "Create recurring reminders for grooming, deworming, vaccination, vet visits, and medicines."
+        },
+        {
+          title: "AI Guidance in Chat",
+          description:
+            "Get informational guidance and next-step clarity with safety-first language."
+        },
+        {
+          title: "Vet-Ready Summaries",
+          description:
+            "Generate clean history summaries and share context quickly when needed."
+        }
+      ],
+      flowTitle: "How the workflow fits together",
       steps: [
         {
           stepLabel: "Step 1",
-          title: "Describe what you’re seeing",
+          title: "Create profile and baseline",
           description:
-            "Share symptoms, behavior changes, timeline, and optional photos in a structured way."
+            "Add your pet profile first so all reminders, timeline entries, and chat guidance are pet-specific."
         },
         {
           stepLabel: "Step 2",
-          title: "Get organized guidance",
+          title: "Log events as they happen",
           description:
-            "Receive informational suggestions and questions to consider — with clear caution around emergencies."
+            "Use Timeline to save symptoms, vet recommendations, medicines, and scanned prescriptions."
         },
         {
           stepLabel: "Step 3",
-          title: "Track and follow up",
+          title: "Set reminders and stay consistent",
           description:
-            "Save notes and pet profiles so follow-ups are easier and more consistent."
+            "Use Schedule and care setup reminders so critical follow-ups are less likely to be missed."
+        },
+        {
+          stepLabel: "Step 4",
+          title: "Use Chat with full context",
+          description:
+            "Ask questions with pet context loaded; symptom mentions can be converted into timeline history."
+        },
+        {
+          stepLabel: "Step 5",
+          title: "Walk into vet visits prepared",
+          description:
+            "Share a cleaner timeline and summary so your vet gets relevant context quickly."
         }
-      ]
+      ],
+      outcomesTitle: "What this changes for you",
+      outcomes: [
+        "Less guesswork during stressful moments",
+        "Fewer missed medications and recurring care tasks",
+        "Better, faster consultations because history is organized"
+      ],
+      safetyTitle: "Safety boundary",
+      safetyNote:
+        "PetSage supports decisions with structured information and guidance. It does not diagnose, prescribe, or replace licensed veterinary care."
     },
     quickStart: {
       seoTitle: "How to Use",

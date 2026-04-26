@@ -25,6 +25,9 @@ export const metadata: Metadata = {
     description: siteContent.seo.defaultDescription,
     images: [siteContent.seo.ogImagePath]
   },
+  icons: {
+    icon: "/icon.svg"
+  },
   robots: {
     index: true,
     follow: true
