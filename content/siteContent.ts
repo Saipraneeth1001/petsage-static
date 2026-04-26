@@ -308,6 +308,16 @@ export const siteContent = {
               src: "/how-to-use-image/timeline-add-menu",
               alt: "Timeline add menu with manual entry and scan prescription",
               caption: "Add menu: manual timeline entry, scan prescription, and vet QR."
+            },
+            {
+              src: "/how-to-use-image/manual-timeline-entry",
+              alt: "Manual timeline entry form",
+              caption: "Manual timeline entry: add category, title, description, medicines, and vet recommendations."
+            },
+            {
+              src: "/how-to-use-image/scan-prescription",
+              alt: "Scanned prescription timeline entry",
+              caption: "Scanned prescription entry: upload prescription, run OCR, then parse to structured fields."
             }
           ]
         },
