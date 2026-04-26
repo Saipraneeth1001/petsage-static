@@ -32,7 +32,7 @@ export const siteContent = {
       { href: "/mission", label: "Mission" },
       { href: "/about", label: "About Us" },
       { href: "/how-it-works", label: "How it Works" },
-      { href: "/quick-start", label: "Quick Start" },
+      { href: "/quick-start", label: "How to Use" },
       { href: "/faq", label: "FAQ" },
       { href: "/contact", label: "Contact" }
     ]
@@ -207,80 +207,140 @@ export const siteContent = {
       ]
     },
     quickStart: {
-      seoTitle: "Quick Start",
-      seoDescription: "Quick start guide for PetSage testers and early users.",
-      title: "PetSage – Quick Start Guide",
-      subtitle: "For testers and early customers",
+      seoTitle: "How to Use",
+      seoDescription: "Step-by-step guide to using PetSage from login to chat, schedule, and timeline.",
+      title: "How to Use PetSage",
+      subtitle: "A practical walkthrough from first login to daily use.",
       sections: [
         {
-          heading: "1) Install & Open",
-          items: [
-            "Install PetSage from the Play Store (or TestFlight on iOS when available).",
-            "Open the app and allow the basic prompts if shown."
+          title: "1) Login or Sign Up",
+          steps: [
+            "Open the app after install. This is the first screen you will see.",
+            "Enter your email and password.",
+            "If you are new, tap Sign up to create your account.",
+            "After signup, use the same credentials to log in.", 
+            "In the beta version, we have not implemented forgot password functionality, please make sure its a simple password which you will remember"
+          ],
+          images: [
+            {
+              src: "/how-to-use-image/login-screen",
+              alt: "Login and signup screen",
+              caption: "Login screen: use Email + Password, then Sign up or Login."
+            }
+          ],
+          note:
+            "Invite code is optional and only needed when the beta is invite-only."
+        },
+        {
+          title: "2) Pets Screen and Add Pet",
+          steps: [
+            "Go to Pets tab to view all pets linked to your account.",
+            "If no pets are present, tap Add.",
+            "Fill pet profile details like name, species, breed, allergies, existing conditions, and notes."
+          ],
+          images: [
+            {
+              src: "/how-to-use-image/pets-screen",
+              alt: "Pets screen with Add button",
+              caption: "Pets screen: tap Add to create a new pet profile."
+            },
+            {
+              src: "/how-to-use-image/add-pet-screen",
+              alt: "Add pet details screen",
+              caption: "Add Pet form: enter profile and medical context details."
+            }
           ]
         },
         {
-          heading: "2) Create Account / Log In",
-          items: [
-            "If you’re new: Enter email + password  → Tap Sign up.",
-            "If asked, enter an invite code (only if your build is invite-only).",
-            "If you already have an account: Tap Log in → Enter email + password."
+          title: "3) Care Setup for the Pet",
+          steps: [
+            "After adding a pet, you are taken to Care setup.",
+            "Configure reminders for grooming, vaccination, deworming, and vet checkups.",
+            "You can skip this step for now and set it up later."
+          ],
+          images: [
+            {
+              src: "/how-to-use-image/care-setup-screen",
+              alt: "Care setup screen for reminders",
+              caption: "Care setup: configure recurring care reminders or skip for now."
+            }
+          ],
+          note:
+            "The app is currently in beta and may feel slightly slow in some flows."
+        },
+        {
+          title: "4) Schedule Screen",
+          steps: [
+            "Open Schedule tab to see reminders for the currently selected pet.",
+            "If one pet has no reminders, switch pet from the selector to view another pet’s reminders.",
+            "These reminders come from your care setup choices during onboarding."
+          ],
+          images: [
+            {
+              src: "/how-to-use-image/schedule-screen",
+              alt: "Schedule tab showing reminder card",
+              caption: "Schedule tab: review upcoming reminders and mark them done."
+            }
           ]
         },
         {
-          heading: "3) Create a Pet Profile (Required first step)",
-          items: [
-            "Go to Pets tab → Tap Add → Fill in your pet details (name/species/etc.) → Tap Save."
+          title: "5) Timeline Screen",
+          steps: [
+            "Timeline stores key health events and history for each pet.",
+            "Use the plus button to add a new event anytime.",
+            "Choose Manual timeline entry to record category, title, description, medicines, and doctor recommendations.",
+            "Choose Scan prescription to upload a prescription image.",
+            "Tap Run OCR to extract text, then Parse to structured fields to auto-fill details.",
+            "You can create reminders and schedule events from timeline flow too."
+          ],
+          images: [
+            {
+              src: "/how-to-use-image/timeline-overview",
+              alt: "Timeline overview with pet snapshot and entries",
+              caption: "Timeline overview: pet snapshot, vet summary, and timeline entries."
+            },
+            {
+              src: "/how-to-use-image/timeline-list",
+              alt: "Timeline list with entries and plus button",
+              caption: "Timeline list: use the plus button to add a new event."
+            },
+            {
+              src: "/how-to-use-image/timeline-add-menu",
+              alt: "Timeline add menu with manual entry and scan prescription",
+              caption: "Add menu: manual timeline entry, scan prescription, and vet QR."
+            }
           ]
         },
         {
-          heading: "4) Chat (Ask Questions)",
-          items: [
-            "Go to Chat tab → Select the pet from the dropdown at the top.",
-            "Type your question and send.",
-            "Wait for the response (you’ll see a “preparing response” loader).",
-            "Quick check (optional): In Chat, tap Quick check → Fill the form (category, severity, notes, etc.) → Tap Save → Then ask your question in chat (it uses the saved info)."
+          title: "6) Chat Screen",
+          steps: [
+            "Select a pet in Chat to load that pet’s conversation history.",
+            "Ask questions normally and review AI guidance responses.",
+            "When symptoms are mentioned in chat, a timeline event may be auto-created so history is not lost.",
+            "If an auto-created timeline event is not needed, you can delete it."
+          ],
+          images: [
+            {
+              src: "/how-to-use-image/chat-screen",
+              alt: "Chat screen with AI response",
+              caption: "Chat screen: ask a question and get guidance tied to the selected pet."
+            }
           ]
         },
         {
-          heading: "5) Schedule (Reminders & Routines)",
-          items: [
-            "Go to Schedule tab → Tap Add.",
-            "Set: Title, Type, Due date/time, Remind me (offset), optional notes → Tap Save.",
-            "Use Sync from backend if you want to refresh from server."
+          title: "7) Vet-Ready Usage Pattern",
+          steps: [
+            "Keep profile details updated as conditions and meds change.",
+            "Log symptoms and events in Timeline as they happen.",
+            "Use Schedule for recurring care and medication reminders.",
+            "Use Chat for guidance and continuity, then share structured context with your vet."
           ]
         },
         {
-          heading: "6) Enable Notifications (for reminders)",
-          items: [
-            "Go to Profile → Notifications.",
-            "Turn on Enable reminders → Tap Request permission.",
-            "On Android 13+, allow notification permission when prompted."
-          ]
-        },
-        {
-          heading: "7) Log Out / Switch Account",
-          items: [
-            "Tap the logout icon in the top bar.",
-            "Log in with a different account if needed."
-          ]
-        },
-        {
-          heading: "8) What to Verify (Checklist)",
-          items: [
-            "Account: Sign up works; Login works; Logout clears data correctly (no old pets/messages).",
-            "Pets: Add/edit pets works; Pets list matches across devices after sync.",
-            "Chat: Messages send/receive reliably; Quick check saves and doesn’t crash.",
-            "Schedule + Reminders: Creating reminders works; Notifications show (after enabling permissions)."
-          ]
-        },
-        {
-          heading: "9) If Something Breaks (What to Send Us)",
-          items: [
-            "Screenshot of the issue.",
-            "What screen you were on.",
-            "Your phone model + Android/iOS version.",
-            "Approx time it happened."
+          title: "Safety Note",
+          steps: [
+            "PetSage supports decisions with organized context and informational guidance.",
+            "It does not replace a licensed veterinarian for diagnosis or treatment."
           ]
         }
       ]
