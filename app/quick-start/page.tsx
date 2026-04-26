@@ -3,6 +3,19 @@ import Image from "next/image";
 import { PageShell } from "@/components/PageShell";
 import { siteContent } from "@/content/siteContent";
 
+type QuickStartImage = {
+  src: string;
+  alt: string;
+  caption?: string;
+};
+
+type QuickStartSection = {
+  title: string;
+  steps: readonly string[];
+  images?: readonly QuickStartImage[];
+  note?: string;
+};
+
 export const metadata: Metadata = {
   title: siteContent.pages.quickStart.seoTitle,
   description: siteContent.pages.quickStart.seoDescription
@@ -10,10 +23,11 @@ export const metadata: Metadata = {
 
 export default function QuickStartPage() {
   const { quickStart } = siteContent.pages;
+  const sections = quickStart.sections as readonly QuickStartSection[];
   return (
     <PageShell title={quickStart.title} subtitle={quickStart.subtitle}>
       <div className="space-y-6">
-        {quickStart.sections.map((section) => {
+        {sections.map((section) => {
           const sectionTitle = section.title;
           const steps = section.steps;
           const images = section.images ?? [];
