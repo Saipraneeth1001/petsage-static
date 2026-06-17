@@ -27,7 +27,10 @@ export const siteContent = {
     ]
   },
   footer: {
-    legalLinks: [{ href: "/privacy", label: "Privacy Policy" }],
+    legalLinks: [
+      { href: "/privacy", label: "Privacy Policy" },
+      { href: "/delete-account", label: "Delete Account" }
+    ],
     socialLinks: [] as { href: string; label: string }[],
     finePrint: "For company and support inquiries, contact us by email."
   },
@@ -114,6 +117,24 @@ export const siteContent = {
           ]
         }
       ]
+    },
+    deleteAccount: {
+      seoTitle: "Delete Account",
+      seoDescription: "How to request deletion of your PetSage account and associated data.",
+      title: "Delete your PetSage account",
+      subtitle: "Account deletion requests are handled by email for security.",
+      intro:
+        "For security, we do not delete an account solely because someone submitted an email address. Please contact us from the email address associated with your account.",
+      supportEmail: "admin@petsage.in",
+      turnaround:
+        "We delete account data within 7 days of verifying the request. Some logs may be retained where required for legal or security purposes.",
+      dataSummary: "Stored data may include your email, chat history, and pet profiles.",
+      steps: [
+        "Send an email to admin@petsage.in from the email address used to sign in.",
+        "Include the words “Delete my account” and the account email address to remove."
+      ],
+      emailTemplateUrl:
+        "mailto:admin@petsage.in?subject=PetSage%20%E2%80%93%20Account%20deletion%20request&body=Hello%20PetSage%20Support%2C%0A%0APlease%20delete%20my%20PetSage%20account%20and%20associated%20data.%0A%0AAccount%20email%20to%20delete%3A%20%3Cyour-email%40example.com%3E%0A%0AThanks%2C"
     }
   }
 };
